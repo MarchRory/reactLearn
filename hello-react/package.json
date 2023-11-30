@@ -10,14 +10,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "history": "^5.3.0",
+    "prettier": "^3.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "terser": "^5.24.0"
   },
   "devDependencies": {
+    "@types/node": "^20.10.1",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
+    "@unocss/postcss": "^0.57.7",
+    "@unocss/transformer-attributify-jsx": "^0.57.7",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
