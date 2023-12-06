@@ -1,9 +1,10 @@
 module.exports = {
+    root: true,
     env: {
         browser: true,
         es2021: true,
     },
-    extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+    extends: ['plugin:react/recommended', 'airbnb', 'prettier', "eslint:recommended", "plugin:@typescript-eslint/recommended"],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
@@ -12,9 +13,18 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
+    settings: { 
+        react: {
+            version: 'detect'
+        }
+    },
     plugins: ['react', '@typescript-eslint', 'prettier'],
     rules: {
         'react/jsx-filename-extension': 'off', 
+        'prettier/prettier': [
+            'error',
+            { singleAttributeOerLine: false }
+        ],
         'react/function-component-definition': [
             2,
             { namedComponents: '"arrow-function' },

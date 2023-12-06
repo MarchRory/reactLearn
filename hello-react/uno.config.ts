@@ -17,8 +17,13 @@ export default defineConfig({
             '**/*.{html,js,ts,jsx,tsx}',
         ]
     },
+    // 配置缩写
     shortcuts: [
         // ...
+    ],
+    // 配置规则
+    rules: [
+
     ],
     theme: {
         colors: {
